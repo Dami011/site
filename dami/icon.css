@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(41fr);
+    grid-template-rows: repeat(4, 400px);
+    gap: 1em;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    border: 10px double blue;
+    margin: 2px;
+}
+
+div h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    padding: 1em, 2em;
+    color: transparent;
+    background: conic-gradient(yellow 20%, blue 20%, blue 40%, green 40%, green 60%, cyan 60%);
+    background-clip: text;
+}
+
