@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phones</title>
     <style>
+        body{
+            background-color: deeppink;
+        }
         table{
             text-transform: capitalize;
             border: collapse;
@@ -28,9 +31,60 @@
           padding: 1cm, 0cm;
           background: linear-gradient(60deg, red, blue, yellow, pink);
         }
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-weight: 'sonsie one', cursive;
+            color: burlywood;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        nav {
+            height: 50px;
+            background-color: gold;
+            flex: 2;
+            display: flex;
+        }
+        nav li {
+            display: inline;
+            text-align: center;
+            flex: 1;
+        }
+        nav a{
+            display: inline-block;
+            font-size: 2rem;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: burlywood;
+        }
+        nav form{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 2em;
+        }
+        
     </style>
 </head>
 <body>
+    <h1>phones</h1>
+
+<nav>
+    <ul>
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./dami/embed.html">Our team</a></li>
+        <li><a href="./dami/silly.html">Projects</a></li>
+        <li><a href="./dami/icon.html">contact us</a></button></li>
+    </ul>
+
+    <form>
+        <input type="search" name="q" placeholder="search query">
+        <input type="submit" value="Go!">
+    </form>
+</nav>
     <main>
         <table>
             <thead>
