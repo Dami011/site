@@ -145,7 +145,6 @@ div{
             margin: 100px auto;
             width: 50%;
             font-size: 2.5em;
-            background: conic-gradient(rgb(0, 255, 42) 20%, red 20%, red 40%, violet 40% ,violet 60%, blue 60%);
             -webkit-background-clip: text;
         }
          div{
