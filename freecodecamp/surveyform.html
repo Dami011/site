@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @media screen and (min-width:800px){
+            
         body{
             background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpvS1JumdM-Dm-OER0AmUzuYMRrc4X42vXPSRBMBwZpl_PcSqfmzFq-6_TsQM-o_ZQik&usqp=CAU);
             background-repeat: no-repeat;
@@ -38,7 +40,44 @@
         textarea, button{
             margin-left: 10px;
         }
+    }
 
+    
+    @media screen and (max-width:799px){
+            
+            body{
+                background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpvS1JumdM-Dm-OER0AmUzuYMRrc4X42vXPSRBMBwZpl_PcSqfmzFq-6_TsQM-o_ZQik&usqp=CAU);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            h1, p{
+                text-align: center;
+                text-transform: capitalize;
+            }
+            ul, ol{
+                list-style-type: none;
+                text-transform: capitalize;
+            }
+            main{
+                width: 70%;
+                margin: 0 auto;
+                padding: 1em;
+                color: aliceblue;
+            }
+            h2 h3{
+                margin-left: 5px;
+            }
+            li{
+                list-style-type: none;
+            }
+            .ip{
+                width: 20em;
+            }
+            textarea, button{
+                margin-left: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -116,7 +155,7 @@
     <lable id="comment">comment or suggestion</label>
  <li>
 </ul>
-<textarea name="" id="comment" cols="70" rows="10">write a comment here</textarea></li>
+<textarea name="" id="comment" cols="45" rows="10">write a comment here</textarea></li>
 <button id="submit">submit</button>
 </form>
 </main>
