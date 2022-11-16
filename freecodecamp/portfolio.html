@@ -8,6 +8,117 @@
     
     
     <style>
+      @media screen and (min-width:800px){
+    
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 200px);
+         grid-template-areas: "a b c"
+                              "d e f"
+                              "g h i";   
+    }
+    
+    div{
+        border: 4px solid blue;
+    }
+    .grid-item1{
+        grid-area: a;
+    }
+    .grid-item2{
+        grid-area: b;
+    }
+    .grid-item3{
+        grid-area: c;
+    }
+    .grid-item4{
+        grid-area: d;
+    }
+    .grid-item5{
+        grid-area: e;
+    }
+    .grid-item6{
+        grid-area: f;
+    }
+    .grid-item7{
+        grid-area: g;
+    }
+    .grid-item8{
+        grid-area: h;
+    }
+    .grid-item9{
+        grid-area: i;
+    }
+    }
+    @media screen and (max-width:799px){
+        
+    
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 200px);
+             grid-template-areas: "a"
+                                  "b"
+                                  "c"
+                                  "d"
+                                  "e"
+                                  "f"
+                                  "g"
+                                  "h"
+                                  "i";   
+        }
+        
+        div{
+            border: 4px solid blue;
+        }
+        .grid-item1{
+            grid-area: a;
+        }
+        .grid-item2{
+            grid-area: b;
+        }
+        .grid-item3{
+            grid-area: c;
+        }
+        .grid-item4{
+            grid-area: d;
+        }
+        .grid-item5{
+            grid-area: e;
+        }
+        .grid-item6{
+            grid-area: f;
+        }
+        .grid-item7{
+            grid-area: g;
+        }
+        .grid-item8{
+            grid-area: h;
+        }
+        .grid-item9{
+            grid-area: i;
+        }
+        }
+            div a{
+                text-transform: uppercase;
+                text-decoration: none;
+                display: block;
+                width: 50%;
+                font-size: 2.5em;
+                background: conic-gradient(rgb(0, 255, 42) 20%, red 20%, red 40%, violet 40% ,violet 60%, blue 60%);
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+             div{
+                background-color: transparent;
+                margin-top: 3px;
+                margin-left: 3px;
+             }
+             img{
+              width: 400px;
+              height: 200px;
+             }
         nav{
   position: fixed;
   width: 100%;
@@ -15,13 +126,8 @@
   font-size: 24pt;
   top: 0%;
   right: 5px;
-  background-color: #000000;
+  background: #000000;
   color: #ffffff;
-}
-@media (max-width: 500px){
-  nav{
-    display: none;
-  }
 }
 a{
   color: #ffffff;
@@ -64,7 +170,15 @@ p{
   width: 100vw;
   height: 100vh;
 }
-
+#Follow{
+  
+  background-color: #383f39;
+  color: #ffffff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+  height: 100vh;
+} 
 
     </style>
 </head>
@@ -73,30 +187,85 @@ p{
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <!--Font Reference-->
     <nav id="navbar">
-      <a href="#projects">Projects</a> |
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact me</a>
-    </nav>
+    </nav> 
     <main>
       <section id="welcome-section">
         <br>
         <h1>It's me!</h1>
-        <h2>code rite</h2>
-        <p>Welcome to my home!</p>
+        <h2>Dcoder</h2>
+        <p>Welcome To My World!</p>
+        
       </section><hr>
       <section id="projects">
         <h1>Projects</h1>
         <h2><a href="">Here's what I've worked on!</a></h2>
         <p class="project-tile">
-    
-      
+        <main class="grid-container">
+          <div class="grid-item1">
+            <a href="../dami/embed.html">
+              <img src="./Screenshot (14).png" alt="embeded maps">
+            </a>
+        </div>
+        <div class="grid-item2">
+            <a href="./landinpage.html">
+              <img src="./Screenshot (11).png" alt="product landing page">
+            </a>
+        </div>
+        <div class="grid-item3">
+            <a href="./surveyform.html">
+              <img src="./Screenshot (12).png" alt="a form">
+            </a>
+        </div>
+        <div class="grid-item4">
+            <a href="./tribute.html">
+              <img src="./Screenshot (13).png" alt="">
+            </a>
+        </div>
+        <div class="grid-item5">
+            <a href="./documentation.html">
+              <img src="./Screenshot (10).png" alt="a documentation on JS">
+            </a>
+        </div>
+        <div class="grid-item6">
+            <a href="../index.html">
+              <img src="./Screenshot (15).png" alt="">
+            </a>
+        </div>
+        <div class="grid-item7">
+            <a href="./portfolio.html">
+              <img src="./Screenshot (16).png" alt="">
+            </a>
+        </div>
+        <div class="grid-item8">
+            <a href="../dami/icon.html">
+              <img src="./Screenshot (17).png" alt="">
+            </a>
+        </div>
+        <div class="grid-item9">
+            <a href="../dami/dami.html">
+              <img src="./Screenshot (18).png" alt="">
+            </a>
+        </div>
+      </main>
         </p></section><hr>
       <section id="contact">
         <h1>Contact me!</h1>
         <h2>Use the links below to get in touch.</h2>
         <p><a href="https://wa.me/message/LMISVK72HJUNA1">Whatsapp</a></p>
         <p><a href="https://www.facebook.com/gbolahun.samuel.5">Facebook</a></p>
-        <p><a href="">Telegram</a></p>
-        <p><a href="">Instagram</a></p>
+        <p><a href="mailto:dami070mosh@gmail.com">Email</a></p>
+        <p><a href="tel:+2347040922706">Call me</a></p>
+        </section><hr>
+
+        
+      <section id="Follow">
+        <h1>Follow me on!</h1>
+        <p><a href="https://www.youtube.com/channel/UCIRCLUGNQfTq5tDRO8J5ZCw">Youtube</a></p>
+        <p><a href="https://www.facebook.com/gbolahun.samuel.5">Facebook</a></p>
+        <p><a href="https://www.tiktok.com/@dcoder247?is_from_webapp=1&sender_device=pc">Tiktok</a></p>
+        <p><a href="https://www.instagram.com/dcoder247/">Instagram</a></p>
         </section>
     <footer><a href="../">Return to Project List</a> | <a href="https://www.nhcarrigan.com">Return to HomePage</a></footer>
     </body>
